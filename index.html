@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temprature Convertor</title>
+      
+       
+        </head>
+        <script type="text/javascript" >
+            // celcius to fahrenheit
+            function fahrenheit(){
+                var c1 = document.getElementById('data1').value;
+                var f1 = (c1 * 1.8) + 32;
+                document.getElementById('res1').innerText = `${c1} C = ${f1} F` ;
+
+            }
+            //  fahrenheit to celcius
+            function celcius(){
+                var f2 = document.getElementById('data2').value;
+                var c2 = (f2 - 32) / 1.8;
+                document.getElementById('res2').innerText = `${f2} F = ${c2} C` ;
+
+            }
+
+        </script>
+<style type="text/css">
+    body {
+  background-image: url('p2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-decoration-color: aliceblue;
+  
+  
+}
+
+   .container
+   {
+    width: 450px;
+    background-color: #ece6db;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    box-shadow: 0 20px 25px rgba(214, 51, 165, 0.25);
+    border-radius: 8px;
+    font-size: 18px;
+   }
+
+   .shadowbox {
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+
+.button {background-color: #c3b3e9;
+padding: 10px;
+}
+
+
+
+</style>
+    </head >
+    <body >
+        <div class="container">
+           
+                <div class="button">
+            <div class="input_box">
+        <h1 style="color:black" >Temprature Convertor</h1>
+        <input type="" name="" id="data1" /> C 
+        <button onclick="fahrenheit() ">Fahrenheit </button>
+        <h1 id="res1"></h1>
+    </div>
+    <div>
+        <input type="" name="" id="data2" /> F
+    
+        <button onclick="celcius()">Celcius </button>
+        <h1 id="res2"></h1>
+    </div>
+        </div>
+    </body>
+</table>
+</html>
